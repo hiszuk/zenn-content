@@ -1,0 +1,13 @@
++<Location />
++  MellonEndpointPath "/saml"
++  MellonIdPMetadataFile /usr/local/apache2/saml/idp-metadata.xml
++  MellonSPPrivateKeyFile /usr/local/apache2/saml/http_localhost_9000.key
++  MellonSPCertFile /usr/local/apache2/saml/http_localhost_9000.cert
++  MellonSPMetadataFile /usr/local/apache2/saml/http_localhost_9000.xml
++
++  AuthType "Mellon"
++  Require valid-user
++  MellonEnable "auth"
++</Location>
++
++
